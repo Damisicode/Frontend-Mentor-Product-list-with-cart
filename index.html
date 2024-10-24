@@ -1,74 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product list with cart</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Product list with cart</title>
 
-  Desserts
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="desserts">
+        <h1>Desserts</h1>
+        <div class="servings">
+          <div class="serving">
+            <img src="assets/images/image-waffle-thumbnail.jpg" class="serving-image"/>
+            <div class="add-to-cart">
+              <img src="assets/images/icon-add-to-cart.svg" />
+              <p>Add to Cart</p>
+            </div>
+            <span class="short-name">Waffle</span>
+            <span class="serving-name">Waffle with Berries</span>
+            <span class="price">$6.50</span>
+          </div>
+          <div class="serving">
+            <img src="assets/images/image-creme-brulee-thumbnail.jpg" class="serving-image"/>
+            <div class="add-to-cart">
+              <img src="assets/images/icon-add-to-cart.svg" />
+              <p>Add to Cart</p>
+            </div>
+            <span class="short-name">Crème Brûlée</span>
+            <span class="serving-name">Vanilla Bean Crème
+              Brûlée</span>
+            <span class="price">$7.00</span>
+          </div>
+          <div class="serving">
+            <img src="assets/images/image-macaron-thumbnail.jpg" class="serving-image"/>
+            <div class="add-to-cart">
+              <img src="assets/images/icon-add-to-cart.svg" />
+              <p>Add to Cart</p>
+            </div>
+            <span class="short-name">Macaron</span>
+            <span class="serving-name">Macaron Mix of Five</span>
+            <span class="price">$8.00</span>
+          </div>
+          <div class="serving">
+            <img src="assets/images/image-tiramisu-thumbnail.jpg" class="serving-image"/>
+            <div class="add-to-cart">
+              <img src="assets/images/icon-add-to-cart.svg" />
+              <p>Add to Cart</p>
+            </div>
+            <span class="short-name">Tiramisu</span>
+            <span class="serving-name">Classic Tiramisu</span>
+            <span class="price">$5.50</span>
+          </div>
+          <div class="serving">
+            <img src="assets/images/image-baklava-thumbnail.jpg" class="serving-image"/>
+            <div class="add-to-cart">
+              <img src="assets/images/icon-add-to-cart.svg" />
+              <p>Add to Cart</p>
+            </div>
+            <span class="short-name">Baklava</span>
+            <span class="serving-name">Pistachio Baklava</span>
+            <span class="price">$4.00</span>
+          </div>
+          <div class="serving">
+            <img src="assets/images/image-meringue-thumbnail.jpg" class="serving-image"/>
+            <div class="add-to-cart">
+              <img src="assets/images/icon-add-to-cart.svg" />
+              <p>Add to Cart</p>
+            </div>
+            <span class="short-name">Pie</span>
+            <span class="serving-name">Lemon Meringue Pie</span>
+            <span class="price">$5.00</span>
+          </div>
+          <div class="serving">
+            <img src="assets/images/image-cake-thumbnail.jpg" class="serving-image"/>
+            <div class="add-to-cart">
+              <img src="assets/images/icon-add-to-cart.svg" />
+              <p>Add to Cart</p>
+            </div>
+            <span class="short-name">Cake</span>
+            <span class="serving-name">Red Velvet Cake</span>
+            <span class="price">$4.50</span>
+          </div>
+          <div class="serving">
+            <img src="assets/images/image-brownie-thumbnail.jpg" class="serving-image"/>
+            <div class="add-to-cart">
+              <img src="assets/images/icon-add-to-cart.svg" />
+              <p>Add to Cart</p>
+            </div>
+            <span class="short-name">Brownie</span>
+            <span class="serving-name">Salted Caramel Brownie</span>
+            <span class="price">$4.50</span>
+          </div>
+          <div class="serving">
+            <img src="assets/images/image-panna-cotta-thumbnail.jpg" class="serving-image"/>
+            <div class="add-to-cart">
+              <img src="assets/images/icon-add-to-cart.svg" />
+              <p>Add to Cart</p>
+            </div>
+            <span class="short-name">Panna Cotta</span>
+            <span class="serving-name">Vanilla Panna Cotta</span>
+            <span class="price">$6.50</span>
+          </div>
+        </div>
+      </section>
+      <section class="side-bar">
+        <h4>Your Cart (0)</h3>
+        <!-- <img src="assets/images/illustration-empty-cart.svg" />
+        <p>Your added items will appear here</p> -->
+        <div class="cart-item">
+          <div class="item-section">
+            <div class="desc">
+              <div class="item-name">Classic Tiramisu</div>
+              <div class="item-info">
+                <span class="item-no">1x</span><span class="item-price">@$5.50</span><span class="item-total">$5.50</span>
+              </div>
+            </div>
+            <div class="remove-cart-item">
+              <img src="assets/images/icon-remove-item.svg"/>
+            </div>
+          </div>
+          <div class="divider"></div>
+        </div>
+        <div class="items-total">
+          <span><p>Order Total</p></span>
+          <span><h4><b>$46.50</b></h4></span>
+        </div>
+        <div class="carbon-info">
+          <img src="assets/images/icon-carbon-neutral.svg" />
+          <span><p>This is a <b>carbon-neutral</b> delivery</p></span>
+        </div>
+        <button>Confirm Order</button>
+      </section>
+    </main>
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
-
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
-
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
-
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
-
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
-
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Oluwadamisi Ayinde</a>.
+    </div>
+  </body>
 </html>
