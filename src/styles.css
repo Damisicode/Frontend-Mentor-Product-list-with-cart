@@ -29,7 +29,8 @@ main {
   width: 90%;
   gap: 2vw;
   align-self: center;
-  margin: 5vw 0;
+  margin: 1vw 0;
+  max-width: fit-content;
 }
 
 /* Dessert styles */
